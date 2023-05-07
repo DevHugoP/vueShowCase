@@ -1,0 +1,1 @@
+export const SET_CUSTOMER_CODE = 'SET_CUSTOMER_CODE'

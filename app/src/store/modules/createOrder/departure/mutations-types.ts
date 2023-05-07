@@ -1,0 +1,1 @@
+export const SET_DEPARTURE = 'SET_DEPARTURE'

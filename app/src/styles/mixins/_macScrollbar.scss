@@ -1,0 +1,25 @@
+// Customize website's scrollbar like Mac OS. Not supports in Firefox and IE.
+@mixin setMacScrollbar($selector) {
+  /* total width */
+  #{$selector}::-webkit-scrollbar {
+    background-color: #fff;
+    width: 1.6rem;
+  }
+
+  /* background of the scrollbar except button or resizer */
+  #{$selector}::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+
+  /* scrollbar itself */
+  #{$selector}::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 1.6rem;
+    border: 0.4rem solid #fff;
+  }
+
+  /* set button(top and bottom of the scrollbar) */
+  #{$selector}::-webkit-scrollbar-button {
+    display: none;
+  }
+}

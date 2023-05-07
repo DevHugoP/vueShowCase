@@ -1,0 +1,10 @@
+ingress:
+  hosts:
+    - host: just.preprod.woopit.fr
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: bo-front-new-tls
+      hosts:
+      - just.preprod.woopit.fr

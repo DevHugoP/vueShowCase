@@ -1,0 +1,2 @@
+export const SET_ALL_STORES = 'SET_ALL_STORES'
+export const SET_STORE_DATA = 'SET_STORE_DATA'

@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  vue:
+    image: node:14.15
+    working_dir: /usr/app
+    container_name: bo-front-new
+    env_file: .env
+    user: node
+    volumes:
+      - ./app:/usr/app
+    command: npm run serve
+    networks:
+      melting-point:
+        aliases:
+          - bo-front-new
+    ports:
+      - "${PORT}:8080"
+
+networks:
+  melting-point:
+    external: true

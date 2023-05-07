@@ -1,0 +1,10 @@
+{
+  "VUE_APP_API_BASE_URL": "http://localhost:3011",
+  "VUE_APP_FRONT_OFFICE_BASE_URL": "http://localhost:8081",
+  "VUE_APP_FRONT_BASE_URL": "http://localhost:8080",
+  "VUE_APP_GCP_PROJECT_ID": "lastmile-dev",
+  "VUE_APP_NAMESPACE": "lastmile-v2",
+  "TRANSLATION_URL": "",
+  "GOOGLE_RECAPTCHA_KEY": "6Ld9728fAAAAAAG32bJawdmxdypHM04-rZFWNumY",
+  "GOOGLE_RECAPTCHA_V3": "6LfTgbwhAAAAAEcgLaFBdxl3xrdyiuMJERgCKkEv"
+}

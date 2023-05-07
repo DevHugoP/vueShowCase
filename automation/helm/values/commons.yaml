@@ -1,0 +1,15 @@
+port: 5000
+
+ingress:
+  enabled: true
+
+extraEnvVars:
+  VUE_APP_API_BASE_URL: "https://{{ .Release.Namespace }}-just-api.{{ .Values.environment }}.woopit.fr"
+  VUE_APP_FRONT_BASE_URL: "https://{{ .Release.Namespace }}-just.{{ .Values.environment }}.woopit.fr"
+  VUE_APP_FRONT_OFFICE_BASE_URL: "https://{{ .Release.Namespace }}-trace.{{ .Values.environment }}.woopit.fr"
+
+extraEnvFrom:
+  - secretRef:
+      name: google-recaptcha-api-key
+  - secretRef:
+      name: google-recaptcha-api-key-v3

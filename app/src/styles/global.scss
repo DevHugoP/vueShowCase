@@ -1,0 +1,209 @@
+@import './variables.scss';
+
+// Typography class generation
+@each $heading, $headingValue in $headings {
+  #{$heading},
+  .#{$heading} {
+    @each $prop, $value in $headingValue {
+      #{$prop}: #{$value} !important;
+    }
+  }
+}
+
+.primary-color {
+  color: $primary-color !important;
+}
+
+.medium12 {
+  @each $prop, $value in $medium12 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.h2-28-bold {
+  @include h2-28-bold;
+}
+
+.h3-18-medium {
+  @include h3-18-medium;
+}
+
+legend,
+.regular12 {
+  @each $prop, $value in $regular12 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.medium14 {
+  @each $prop, $value in $medium14 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.italic14 {
+  @each $prop, $value in $italic14 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.italic12 {
+  @each $prop, $value in $italic12 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.regular14 {
+  @each $prop, $value in $regular14 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+p,
+.regular16 {
+  @each $prop, $value in $regular16 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.medium16 {
+  @each $prop, $value in $medium16 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.italic16 {
+  @each $prop, $value in $italic16 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+.thin100 {
+  @each $prop, $value in $thin100 {
+    #{$prop}: #{$value} !important;
+  }
+}
+
+// color
+.main-color {
+  color: $main-color !important;
+}
+
+.main-lighten-74 {
+  color: $main-lighten-74-color !important;
+}
+
+.main-lighten-52 {
+  color: $main-lighten-52-color !important;
+}
+
+.main-lighten-65 {
+  color: $main-lighten-65-color !important;
+}
+
+.main-lighten-28 {
+  color: $main-lighten-28-color !important;
+}
+
+.alert-color {
+  color: $alert-color !important;
+}
+
+.error-color,
+.error-color--text {
+  color: $error-color !important;
+}
+
+.success-color--text,
+.success-color {
+  color: $success-color !important;
+}
+
+// Shadows
+.drop-shadow-active {
+  fill: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+
+.drop-shadow-default {
+  fill: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.07);
+}
+
+.drop-shadow-hover {
+  fill: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.18);
+}
+
+// Main
+#app.v-application {
+  &.v-application--has-light-layout {
+    .split-screen__wrapper {
+      height: 100vh;
+      min-height: 100vh;
+      max-height: 100vh;
+
+      &--right {
+        background: $white;
+      }
+    }
+  }
+
+  .split-screen__wrapper {
+    min-height: calc(100vh - 8.5rem);
+    max-height: calc(100vh - 8.5rem);
+  }
+
+  .main-content--centered {
+    @media #{map-get($display-breakpoints, 'xs-only')} {
+      height: 100%;
+      position: fixed;
+      overflow-y: scroll;
+      background-color: $white;
+      top: 8.7rem;
+      padding-bottom: 6.4rem !important;
+
+      &.with-stepper {
+        top: 16.1rem;
+        padding-bottom: 16.1rem !important;
+      }
+    }
+
+    @media #{map-get($display-breakpoints, 'sm-and-up')} {
+      .v-main__wrap {
+        > .container {
+          height: 100%;
+        }
+      }
+
+      min-height: calc(100vh - 8.5rem);
+      background: $white;
+    }
+  }
+
+  .mp-row {
+    margin: 0 0 2rem;
+  }
+
+  .v-input {
+    padding: 0;
+    margin: 0;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  .v-text-field--outlined fieldset {
+    border: 0.1rem solid $main-color;
+  }
+}
+
+// Effects
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

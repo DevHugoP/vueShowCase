@@ -1,0 +1,1 @@
+export const SET_ORDER_CONTENT = 'SET_ORDER_CONTENT'

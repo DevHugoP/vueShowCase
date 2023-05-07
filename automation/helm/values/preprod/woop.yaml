@@ -1,0 +1,8 @@
+extraEnvVars:
+  VUE_APP_API_BASE_URL: "https://just-api.preprod.woopit.fr"
+  VUE_APP_FRONT_BASE_URL: "https://just.preprod.woopit.fr"
+  VUE_APP_FRONT_OFFICE_BASE_URL: "https://trace.preprod.woopit.fr"
+
+autoscaling:
+  minReplicas: 2
+  maxReplicas: 4

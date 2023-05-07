@@ -1,0 +1,344 @@
+// Globals
+$font-size-root: 62.5%; // Sets up the Base 10 stuff
+
+// Button size
+$btn-sizes: (
+  'default': 40,
+  'large': 50,
+);
+
+// Typography
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-work: 'Work Sans', sans-serif;
+
+$headings: (
+  'h1': (
+    'font-family': $font-family-roboto,
+    'font-size': 4.4rem,
+    'line-height': 4.6rem,
+    'font-weight': 700,
+  ),
+  'h1-mobile': (
+    'font-family': $font-family-work,
+    'font-size': 1.4rem,
+    'line-height': 1.6rem,
+    'font-weight': 400,
+    'letter-spacing': 0.15rem,
+    'text-transform': uppercase,
+  ),
+  'h2': (
+    'font-family': $font-family-roboto,
+    'font-size': 2.8rem,
+    'line-height': 100%,
+    'font-weight': 700,
+  ),
+  'h3': (
+    'font-family': $font-family-roboto,
+    'font-size': 1.8rem,
+    'line-height': 100%,
+    'font-weight': 500,
+  ),
+  'h4': (
+    'font-family': $font-family-work,
+    'font-size': 1.6rem,
+    'line-height': 1.9rem,
+    'font-weight': 500,
+  ),
+  'caption': (
+    'size': 1.6rem,
+  ),
+  'subtitle-1': (
+    'size': 1.6rem,
+  ),
+);
+
+// Table
+$data-table-regular-header-font-size: 1.6rem;
+$data-table-regular-row-font-size: 1.6rem;
+
+$regular16: (
+  'font-family': $font-family-work,
+  'font-size': 1.6rem,
+  'line-height': 100%,
+  'font-weight': 400,
+);
+
+$medium16: (
+  'font-family': $font-family-work,
+  'font-size': 1.6rem,
+  'line-height': 1.9rem,
+  'font-weight': 500,
+);
+
+$italic16: (
+  'font-family': $font-family-work,
+  'font-style': italic,
+  'font-size': 1.6rem,
+  'line-height': 1.8rem,
+  'font-weight': 400,
+);
+
+$medium12: (
+  'font-family': $font-family-work,
+  'font-size': 1.2rem,
+  'line-height': 100%,
+  'font-weight': 500,
+);
+
+$regular12: (
+  'font-family': $font-family-work,
+  'font-size': 1.2rem,
+  'line-height': 100%,
+  'font-weight': 400,
+);
+
+$regular14: (
+  'font-family': $font-family-work,
+  'font-size': 1.4rem,
+  'line-height': 1.8rem,
+  'font-weight': 400,
+);
+
+$italic14: (
+  'font-family': $font-family-work,
+  'font-style': italic,
+  'font-size': 1.4rem,
+  'line-height': 1.9rem,
+  'font-weight': 400,
+);
+
+$italic12: (
+  'font-family': $font-family-work,
+  'font-style': italic,
+  'font-size': 1.2rem,
+  'line-height': 1.4rem,
+  'font-weight': 400,
+);
+
+$medium14: (
+  'font-family': $font-family-work,
+  'font-size': 1.4rem,
+  'line-height': 100%,
+  'font-weight': 500,
+);
+
+$thin100: (
+  'font-family': $font-family-roboto,
+  'font-size': 13rem,
+  'line-height': 15.2rem,
+  'font-weight': 100,
+);
+
+// Primary colors
+$primary-color: var(--v-primary-base);
+$primary-active-color: var(--v-primaryActiveColor-base);
+$primary-hover-color: var(--v-primaryHoverColor-base);
+$primary-disabled-color: var(--v-primaryDisabledColor-base);
+$primary-light-color: var(--v-primaryLightColor-base);
+
+// Secondary colors
+$aphrodite-color: var(--v-aphroditeColor-base);
+$athena-color: var(--v-athenaColor-base);
+
+// Info colors
+$info-color: var(--v-infoColor-base);
+$info-active-color: var(--v-infoActiveColor-base);
+$info-hover-color: var(--v-infoHoverColor-base);
+$info-disabled-color: var(--v-infoDisabledColor-base);
+$info-light-color: var(--v-infoLightColor-base);
+
+// Success colors
+$success-color: var(--v-successColor-base);
+$success-active-color: var(--v-successActiveColor-base);
+$success-hover-color: var(--v-successHoverColor-base);
+$success-disabled-color: var(--v-successDisabledColor-base);
+$success-light-color: var(--v-successLightColor-base);
+
+// Error colors
+$error-color: var(--v-error-base);
+$error-active-color: var(--v-errorActiveColor-base);
+$error-hover-color: var(--v-errorHoverColor-base);
+$error-disabled-color: var(--v-errorDisabledColor-base);
+$error-light-color: var(--v-errorLightColor-base);
+
+// Alert colors
+$alert-color: var(--v-alertColor-base);
+$alert-active-color: var(--v-alertActiveColor-base);
+$alert-hover-color: var(--v-alertHoverColor-base);
+$alert-disabled-color: var(--v-alertDisabledColor-base);
+$alert-light-color: var(--v-alertLightColor-base);
+
+// Neutral colors
+$main-color: var(--v-mainColor-base);
+$main-lighten-4-color: var(--v-mainLighten4Color-base);
+$main-lighten-8-color: var(--v-mainLighten8Color-base);
+$main-lighten-28-color: var(--v-mainLighten28Color-base);
+$main-lighten-52-color: var(--v-mainLighten52Color-base);
+$main-lighten-65-color: var(--v-mainLighten65Color-base);
+$main-lighten-74-color: var(--v-mainLighten74Color-base);
+$main-lighten-80-color: var(--v-mainLighten80Color-base);
+$white: var(--v-white-base);
+
+/**** Fonts ****/
+/** h1-44-bold **/
+$h1-44-bold-font-family: 'Roboto', 'Roboto-Bold';
+$h1-44-bold-font-size: 44px;
+$h1-44-bold-letter-spacing: 0px;
+$h1-44-bold-line-height: 46px;
+$h1-44-bold-font-weight: 700;
+
+@mixin h1-44-bold($important: '') {
+  font-family: $h1-44-bold-font-family #{$important};
+  font-size: $h1-44-bold-font-size #{$important};
+  letter-spacing: $h1-44-bold-letter-spacing #{$important};
+  line-height: $h1-44-bold-line-height #{$important};
+  font-weight: $h1-44-bold-font-weight #{$important};
+}
+
+/** h2-28-bold **/
+$h2-28-bold-font-family: 'Roboto', 'Roboto-Bold';
+$h2-28-bold-font-size: 28px;
+$h2-28-bold-letter-spacing: 0px;
+$h2-28-bold-line-height: 100%;
+$h2-28-bold-font-weight: 700;
+
+@mixin h2-28-bold($important: '') {
+  font-family: $h2-28-bold-font-family #{$important};
+  font-size: $h2-28-bold-font-size #{$important};
+  letter-spacing: $h2-28-bold-letter-spacing #{$important};
+  line-height: $h2-28-bold-line-height #{$important};
+  font-weight: $h2-28-bold-font-weight #{$important};
+}
+
+/** h3-18-medium **/
+$h3-18-medium-font-family: 'Roboto', 'Roboto-Medium';
+$h3-18-medium-font-size: 18px;
+$h3-18-medium-letter-spacing: 0px;
+$h3-18-medium-line-height: 100%;
+$h3-18-medium-font-weight: 500;
+
+@mixin h3-18-medium($important: '') {
+  font-family: $h3-18-medium-font-family #{$important};
+  font-size: $h3-18-medium-font-size #{$important};
+  letter-spacing: $h3-18-medium-letter-spacing #{$important};
+  line-height: $h3-18-medium-line-height #{$important};
+  font-weight: $h3-18-medium-font-weight #{$important};
+}
+
+/** h4-16-medium **/
+$h4-16-medium-font-family: 'Roboto', 'Roboto-Medium';
+$h4-16-medium-font-size: 16px;
+$h4-16-medium-letter-spacing: 0px;
+$h4-16-medium-line-height: 19px;
+$h4-16-medium-font-weight: 500;
+
+@mixin h4-16-medium($important: '') {
+  font-family: $h4-16-medium-font-family #{$important};
+  font-size: $h4-16-medium-font-size #{$important};
+  letter-spacing: $h4-16-medium-letter-spacing #{$important};
+  line-height: $h4-16-medium-line-height #{$important};
+  font-weight: $h4-16-medium-font-weight #{$important};
+}
+
+/** regular-16 **/
+$regular-16-font-family: $font-family-work;
+$regular-16-font-size: 1.6rem;
+$regular-16-letter-spacing: 0;
+$regular-16-line-height: 100%;
+$regular-16-font-weight: 400;
+
+@mixin regular-16($important: '') {
+  font-family: $regular-16-font-family #{$important};
+  font-size: $regular-16-font-size #{$important};
+  letter-spacing: $regular-16-letter-spacing #{$important};
+  line-height: $regular-16-line-height #{$important};
+  font-weight: $regular-16-font-weight #{$important};
+}
+
+/** medium-12 **/
+$medium-12-font-family: $font-family-work;
+$medium-12-font-size: 1.2rem;
+$medium-12-letter-spacing: 0;
+$medium-12-line-height: 100%;
+$medium-12-font-weight: 500;
+
+@mixin medium-12($important: '') {
+  font-family: $medium-12-font-family #{$important};
+  font-size: $medium-12-font-size #{$important};
+  letter-spacing: $medium-12-letter-spacing #{$important};
+  line-height: $medium-12-line-height #{$important};
+  font-weight: $medium-12-font-weight #{$important};
+}
+
+/** regular-12 **/
+$regular-12-font-family: $font-family-work;
+$regular-12-font-size: 1.2rem;
+$regular-12-letter-spacing: 0;
+$regular-12-line-height: 100%;
+$regular-12-font-weight: 400;
+
+@mixin regular-12($important: '') {
+  font-family: $regular-12-font-family #{$important};
+  font-size: $regular-12-font-size #{$important};
+  letter-spacing: $regular-12-letter-spacing #{$important};
+  line-height: $regular-12-line-height #{$important};
+  font-weight: $regular-12-font-weight #{$important};
+}
+
+/** regular-14 **/
+$regular-14-font-family: $font-family-work;
+$regular-14-font-size: 1.4rem;
+$regular-14-letter-spacing: 0;
+$regular-14-line-height: 1.8rem;
+$regular-14-font-weight: 400;
+
+@mixin regular-14($important: '') {
+  font-family: $regular-14-font-family #{$important};
+  font-size: $regular-14-font-size #{$important};
+  letter-spacing: $regular-14-letter-spacing #{$important};
+  line-height: $regular-14-line-height #{$important};
+  font-weight: $regular-14-font-weight #{$important};
+}
+
+/** italic-14 **/
+$italic-14-font-family: $font-family-work;
+$italic-14-font-style: italic;
+$italic-14-font-size: 1.4rem;
+$italic-14-letter-spacing: 0;
+$italic-14-line-height: 1.8rem;
+$italic-14-font-weight: 400;
+
+@mixin italic-14($important: '') {
+  font-family: $italic-14-font-family #{$important};
+  font-size: $italic-14-font-size #{$important};
+  font-style: $italic-14-font-style #{$important};
+  letter-spacing: $italic-14-letter-spacing #{$important};
+  line-height: $italic-14-line-height #{$important};
+  font-weight: $italic-14-font-weight #{$important};
+}
+
+/** medium-14 **/
+$medium-14-font-family: $font-family-work;
+$medium-14-font-size: 1.4rem;
+$medium-14-letter-spacing: 0;
+$medium-14-line-height: 1.8rem;
+$medium-14-font-weight: 500;
+
+@mixin medium-14($important: '') {
+  font-family: $medium-14-font-family #{$important};
+  font-size: $medium-14-font-size #{$important};
+  letter-spacing: $medium-14-letter-spacing #{$important};
+  line-height: $medium-14-line-height #{$important};
+  font-weight: $medium-14-font-weight #{$important};
+}
+
+// Effect
+$box-shadow-active: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.18);
+$box-shadow-default: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.18);
+$box-shadow-hover: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.18);
+$linear-gradient-shadow: linear-gradient(
+  180deg,
+  rgba(196, 196, 196, 0.19) 0%,
+  rgba(196, 196, 196, 0) 100%
+);
+$spacer: 0.4rem;
